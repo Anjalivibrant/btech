@@ -1,5 +1,28 @@
 #include<iostream>
 using namespace std;
+float discount(float amt){
+    float disAmt=(0.1)*amt;
+    float totalAmt=amt-disAmt;
+    return totalAmt;
+}
+int main()
+{
+    float amt,totalAmt,discountamt;
+    cout<<"Please enter the Total amount of the shopping done in $:"<<endl;
+    cin>>amt;
+    if(amt>100){
+     totalAmt=discount(amt);
+    }
+    else{
+        totalAmt=amt;
+    }
+    cout<<"The total amount to be paid is: "<<totalAmt<<"$"<<endl;
+    return 0;
+}
+/*
+
+#include<iostream>
+using namespace std;
 string totalBill[100];//to store the total bill of the shopping
 string sectionBill[100];//to store the sectionwise bill
 int quan,amt,cost,totalAmt,sectionAmt,pointer1,pointer2;//global variables
@@ -220,4 +243,4 @@ int main()
     cout<<"Total Money spent on shopping:(with discount) Rs."<<totalAmt<<endl;
     cout << "Thank you for shopping with us, " << name << "!" << endl;
   return 0;
-}
+}*/

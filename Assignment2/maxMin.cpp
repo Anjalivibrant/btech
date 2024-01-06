@@ -3,7 +3,7 @@ using namespace std;//Namespace Declaration
 
 int main(){//Main Function
     int size,max=0,min=0;
-    cout << "Entere the size of the array: " << endl;
+    cout << "Enter the size of the array: " << endl;
     cin >> size;
     int array[size];//array declaration
     cout<< "Enter Array elements: "<< endl;
